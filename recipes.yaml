@@ -1,82 +1,29 @@
 recipes:
-  docker:
-    name: "Docker"
-    description: "Platform for developing, shipping, and running applications in containers."
-    supported_targets:
-      - pipeline
-      - wb_ComputeServer
-      - wb_VirtualDesktop
+   vector_canoe:
+    name: "Vector CANoe"
+    description: "Tool for simulating and testing automotive network protocols like CAN, LIN, FlexRay."
     versions:
-      v20.10.7:
-        playbook: "playbooks/docker-v20.10.7.yml"
+      v10.0:
+        playbook: "playbooks/vector_canoe-v10.0.yml"
         metadata:
           supported_arch:
             - x86_64
-          minimum_ram_gb: "4"
-      v21.03.0:
-        playbook: "playbooks/docker-v21.03.0.yml"
+          minimum_ram_gb: "8"
+      v11.0:
+        playbook: "playbooks/vector_canoe-v11.0.yml"
         metadata:
           supported_arch:
             - x86_64
             - arm64
-          minimum_ram_gb: "8"
-      v22.0.0:
-        playbook: "playbooks/docker-v22.0.0.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-            - arm64
-          minimum_ram_gb: "8"
+          minimum_ram_gb: "16"
 
-  python:
-    name: "Python"
-    description: "High-level programming language for general-purpose programming."
-    supported_targets:
-      - wb
-      - wb_VirtualDesktop
+  matlab_simulink:
+    name: "MatLab Simulink"
+    description: "Platform for model-based design, simulation, and control systems for automotive development."
     versions:
-      3.8.10:
-        playbook: "playbooks/python-3.8.10.yml"
+      r2021a:
+        playbook: "playbooks/matlab_simulink-r2021a.yml"
         metadata:
           supported_arch:
             - x86_64
-          minimum_ram_gb: "2"
-      3.9.5:
-        playbook: "playbooks/python-3.9.5.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-            - arm64
-          minimum_ram_gb: "4"
-      3.10.0:
-        playbook: "playbooks/python-3.10.0.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-          minimum_ram_gb: "4"
-          
-  mysql:
-    name: "MySQL"
-    description: "Open-source relational database management system."
-    supported_targets:
-      - pipeline
-      - wb_ComputeServer
-    versions:
-      5.7:
-        playbook: "playbooks/mysql-v5.7.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-          minimum_ram_gb: "4"
-      8.0:
-        playbook: "playbooks/mysql-v8.0.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-          minimum_ram_gb: "8"
-      8.0.23:
-        playbook: "playbooks/mysql-v8.0.23.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-          minimum_ram_gb: "8"
+          minimum_ram_gb: "12"
