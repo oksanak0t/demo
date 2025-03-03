@@ -1,28 +1,56 @@
+recipes:
   vector_canoe:
     name: "Vector CANoe"
     description: "Tool for simulating and testing automotive network protocols like CAN, LIN, FlexRay."
+    supported_targets:
+      - wb
+      - wb_ComputeServer
+      - wb_VirtualDesktop
+      - wb_WebIDE
+      - pipeline
+      - pipeline_gh
+      - pipeline_gl
     versions:
-      v10.0:
-        playbook: "playbooks/vector_canoe-v10.0.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-          minimum_ram_gb: "8"
-      v11.0:
-        playbook: "playbooks/vector_canoe-v11.0.yml"
+      1.0.0:
+        playbook: "playbooks/vector_canoe-v1.0.yml"
         metadata:
           supported_arch:
             - x86_64
             - arm64
-          minimum_ram_gb: "16"
-
-  matlab_simulink:
-    name: "MatLab Simulink"
-    description: "Platform for model-based design, simulation, and control systems for automotive development."
-    versions:
-      r2021a:
-        playbook: "playbooks/matlab_simulink-r2021a.yml"
+          minimum_ram_gb: "8"
+      v2.0:
+        playbook: "playbooks/vector_canoe-v2.0.yml"
         metadata:
           supported_arch:
             - x86_64
-          minimum_ram_gb: "12"
+            - arm64
+          minimum_ram_gb: "8"
+      3.0.0:
+        playbook: "playbooks/vector_canoe-v3.0.yml"
+      v1.2.3:
+        playbook: "playbooks/vector_canoe-v3.0.yml"
+      1.0.0-alpha:
+        playbook: "playbooks/vector_canoe-v3.0.yml"
+      2.0.0+build1234:
+        playbook: "playbooks/vector_canoe-v3.0.yml"
+      v2.1.0-rc+build5678:
+        playbook: "playbooks/vector_canoe-v3.0.yml"
+      1.123.123:
+        playbook: "playbooks/vector_canoe-v3.0.yml"
+      v1.2.3-alpha+build:
+        playbook: "playbooks/vector_canoe-v3.0.yml"
+  canoe:
+    name: "CANoe"
+    description: "I am canoe package"
+    versions:
+      v1.0.0:
+        playbook: "playbooks/canoe-v1.0.yml"
+      v2.0:
+        playbook: "playbooks/canoe-v2.0.yml"
+        metadata:
+          supported_arch:
+            - x86_64
+      v3.0:
+        playbook: "playbooks/canoe-v3.0.yml"
+        metadata:
+          minimum_ram_gb: "16"      
