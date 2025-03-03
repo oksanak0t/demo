@@ -1,6 +1,6 @@
 recipes:
-  vector_canoe:
-    name: "Vector CANoe D"
+  vector_canoe_0:
+    name: "Vector CANoe_0"
     description: "Tool for simulating and testing automotive network protocols like CAN, LIN, FlexRay."
     versions:
       v10.0:
@@ -17,8 +17,8 @@ recipes:
             - arm64
           minimum_ram_gb: "16"
 
-  matlab_simulink:
-    name: "MatLab Simulink D"
+  matlab_simulink_0:
+    name: "MatLab Simulink_0"
     description: "Platform for model-based design, simulation, and control systems for automotive development."
     versions:
       2021.0.0:
