@@ -1,5 +1,5 @@
 recipes:
-   vector_canoe:
+  vector_canoe:
     name: "Vector CANoe"
     description: "Tool for simulating and testing automotive network protocols like CAN, LIN, FlexRay."
     versions:
