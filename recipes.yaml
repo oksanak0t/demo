@@ -1,32 +1,29 @@
 recipes:
   vector_canoe:
-    name: Vector CANoe
-    description: >-
-      Tool for simulating and testing automotive network protocols like CAN,
-      LIN, FlexRay.
+    name: "Vector CANoe"
+    description: "Tool for simulating and testing automotive network protocols like CAN, LIN, FlexRay."
     versions:
       v10.0:
-        playbook: playbooks/vector_canoe-v10.0.yml
+        playbook: "playbooks/vector_canoe-v10.0.yml"
         metadata:
           supported_arch:
             - x86_64
-          minimum_ram_gb: '8'
+          minimum_ram_gb: "8"
       v11.0:
-        playbook: playbooks/vector_canoe-v11.0.yml
+        playbook: "playbooks/vector_canoe-v11.0.yml"
         metadata:
           supported_arch:
             - x86_64
             - arm64
-          minimum_ram_gb: '16'
+          minimum_ram_gb: "16"
+
   matlab_simulink:
-    name: MatLab Simulink
-    description: >-
-      Platform for model-based design, simulation, and control systems for
-      automotive development.
+    name: "MatLab Simulink"
+    description: "Platform for model-based design, simulation, and control systems for automotive development."
     versions:
-      r2021a:
-        playbook: playbooks/matlab_simulink-r2021a.yml
+      2021.0.0:
+        playbook: "playbooks/matlab_simulink-2021.0.0.yml"
         metadata:
           supported_arch:
             - x86_64
-          minimum_ram_gb: '12'
+          minimum_ram_gb: "12"
