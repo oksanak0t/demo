@@ -11,12 +11,15 @@ recipes:
           minimum_ram_gb: "8"
       v11.0:
         playbook: "playbooks/vector_canoe-v11.0.yml"
+        options:
+          name: QWE
+          description: Descr
         metadata:
           supported_arch:
             - x86_64
             - arm64
           minimum_ram_gb: "16"
-
+          
   matlab_simulink_0:
     name: "MatLab Simulink_0"
     description: "Platform for model-based design, simulation, and control systems for automotive development."
