@@ -21,7 +21,7 @@ recipes:
               description: "Description."
             - name: "host"
               description: "Host."
-          
+
   matlab_simulink_0:
     name: "MatLab Simulink_0"
     description: "Platform for model-based design, simulation, and control systems for automotive development."
@@ -32,3 +32,25 @@ recipes:
           supported_arch:
             - x86_64
           minimum_ram_gb: "32"
+          
+  grafana_0:
+    name: "Grafana_0"
+    description: "Open-source platform for monitoring and observability, ideal for visualizing vehicle sensor data."
+    versions:
+      9.5.0:
+        playbook: "playbooks/grafana-9.5.0.yml"
+        metadata:
+          supported_arch:
+            - x86_64
+            - arm64
+          minimum_ram_gb: "4"
+      10.1.0:
+        playbook: "playbooks/grafana-10.1.0.yml"
+        metadata:
+          supported_arch:
+            - x86_64
+            - arm64
+          minimum_ram_gb: "8"
+          options:
+            - name: "datasource_url"
+              description: "URL for the default data source."
