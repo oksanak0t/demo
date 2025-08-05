@@ -31,4 +31,4 @@ recipes:
         metadata:
           supported_arch:
             - x86_64
-          minimum_ram_gb: "12"
+          minimum_ram_gb: "32"
