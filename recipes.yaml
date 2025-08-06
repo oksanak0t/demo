@@ -18,45 +18,21 @@ recipes:
           minimum_ram_gb: "16"
           options:
             - name: "key"
-              description: "License key for activation."
+              description: "Description."
             - name: "host"
-              description: "Target host machine."
-      v12.0:
-        playbook: "playbooks/vector_canoe-v12.0.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-            - arm64
-          minimum_ram_gb: "32"
-          options:
-            - name: "license_server_address"
-              description: "Address of the network license server."
-            - name: "enable_flexray_support"
-              description: "Enable the FlexRay protocol add-on."
-            - name: "enable_ethernet_support"
-              description: "Enable the automotive Ethernet protocol add-on."
+              description: "Host."
 
   matlab_simulink_0:
     name: "MatLab Simulink_0"
     description: "Platform for model-based design, simulation, and control systems for automotive development."
     versions:
-      R2022b:
-        playbook: "playbooks/matlab_simulink-R2022b.yml"
+      2021.0.0:
+        playbook: "playbooks/matlab_simulink-2021.0.0.yml"
         metadata:
           supported_arch:
             - x86_64
           minimum_ram_gb: "32"
-      R2023a:
-        playbook: "playbooks/matlab_simulink-R2023a.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-            - arm64
-          minimum_ram_gb: "32"
-          options:
-            - name: "license_file"
-              description: "Path to the network license file."
-
+          
   grafana_0:
     name: "Grafana_0"
     description: "Open-source platform for monitoring and observability, ideal for visualizing vehicle sensor data."
@@ -78,49 +54,3 @@ recipes:
           options:
             - name: "datasource_url"
               description: "URL for the default data source."
-
-  ros_noetic_0:
-    name: "ROS Noetic Ninjemys_0"
-    description: "Robot Operating System for building robotic applications, widely used in autonomous vehicle research."
-    versions:
-      1.16.0:
-        playbook: "playbooks/ros_noetic-1.16.0.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-            - arm64
-          minimum_ram_gb: "8"
-          options:
-            - name: "install_type"
-              description: "Type of installation (e.g., desktop-full, ros-base)."
-
-  etas_inca_0:
-    name: "ETAS INCA_0"
-    description: "Integrated environment for measurement, ECU calibration, and diagnostics of automotive systems."
-    versions:
-      7.2:
-        playbook: "playbooks/etas_inca-7.2.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-          minimum_ram_gb: "16"
-          options:
-            - name: "license_server"
-              description: "Hostname or IP of the license server."
-
-  jenkins_0:
-    name: "Jenkins_0"
-    description: "Open-source automation server for building, testing, and deploying software in CI/CD pipelines."
-    versions:
-      2.401.3:
-        playbook: "playbooks/jenkins-2.401.3.yml"
-        metadata:
-          supported_arch:
-            - x86_64
-            - arm64
-          minimum_ram_gb: "4"
-          options:
-            - name: "admin_user"
-              description: "Initial administrator username."
-            - name: "admin_pass"
-              description: "Initial administrator password."
