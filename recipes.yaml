@@ -56,7 +56,7 @@ recipes:
           options:
             - name: "license_file"
               description: "Path to the network license file."
-  
+
   grafana_0:
     name: "Grafana_0"
     description: "Open-source platform for monitoring and observability, ideal for visualizing vehicle sensor data."
