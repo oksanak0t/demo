@@ -21,7 +21,7 @@ recipes:
               description: "Description."
             - name: "host"
               description: "Host."
-       v12.0:
+      v12.0:
         playbook: "playbooks/vector_canoe-v12.0.yml"
         metadata:
           supported_arch:
@@ -46,7 +46,7 @@ recipes:
           supported_arch:
             - x86_64
           minimum_ram_gb: "32"
-          
+
   grafana_0:
     name: "Grafana_0"
     description: "Open-source platform for monitoring and observability, ideal for visualizing vehicle sensor data."
