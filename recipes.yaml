@@ -76,7 +76,7 @@ recipes:
         metadata:
           supported_arch:
             - arm64
-          minimum_ram_gb: "2"
+          minimum_ram_gb: "32"
           options:
             - name: "datasource_url"
               description: "URL for the default data source."
