@@ -75,9 +75,8 @@ recipes:
         playbook: "playbooks/grafana-10.1.0.yml"
         metadata:
           supported_arch:
-            - x86_64
             - arm64
-          minimum_ram_gb: "8"
+          minimum_ram_gb: "16"
           options:
             - name: "datasource_url"
               description: "URL for the default data source."
