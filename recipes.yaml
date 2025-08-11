@@ -80,4 +80,9 @@ recipes:
           options:
             - name: "datasource_url"
               description: "URL for the default data source."
-
+      10.2.0:
+        playbook: "playbooks/grafana-10.2.0.yml"
+        metadata:
+          supported_arch:
+            - arm64
+          minimum_ram_gb: "16"
