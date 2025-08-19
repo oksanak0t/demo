@@ -48,6 +48,36 @@ recipes:
               description: "Enable the FlexRay protocol add-on."
             - name: "enable_ethernet_support"
               description: "Enable the automotive Ethernet protocol add-on."
+      v16.0:
+        playbook: "playbooks/vector_canoe-v16.0.yml"
+        metadata:
+          supported_arch:
+            - x86_64
+            - arm64
+          minimum_ram_gb: "96"
+          options:
+            - name: "license_server_address"
+              description: "Address of the network license server."
+            - name: "enable_ethernet_support"
+              description: "Enable the automotive Ethernet protocol add-on."
+            - name: "enable_can_fd"
+              description: "Enable support for CAN-FD (Flexible Data-Rate)."
+      v17.0:
+        playbook: "playbooks/vector_canoe-v17.0.yml"
+        metadata:
+          supported_arch:
+            - x86_64
+            - arm64
+          minimum_ram_gb: "128"
+          options:
+            - name: "license_server_address"
+              description: "Address of the network license server."
+            - name: "enable_flexray_support"
+              description: "Enable the FlexRay protocol add-on."
+            - name: "enable_ethernet_support"
+              description: "Enable the automotive Ethernet protocol add-on."
+            - name: "enable_ota_testing"
+              description: "Enable support for over-the-air update testing."
 
   matlab_simulink_0:
     name: "MatLab Simulink_0"
