@@ -72,12 +72,10 @@ recipes:
           options:
             - name: "license_server_address"
               description: "Address of the network license server."
-            - name: "enable_flexray_support"
-              description: "Enable the FlexRay protocol add-on."
             - name: "enable_ethernet_support"
               description: "Enable the automotive Ethernet protocol add-on."
-            - name: "enable_ota_testing"
-              description: "Enable support for over-the-air update testing."
+            - name: "enable_can_fd"
+              description: "Enable support for CAN-FD (Flexible Data-Rate)."
 
   matlab_simulink_0:
     name: "MatLab Simulink_0"
