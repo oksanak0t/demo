@@ -115,6 +115,12 @@ recipes:
           supported_arch:
             - x86_64
           minimum_ram_gb: "8"
+      2021.0.1:
+        playbook: "playbooks/matlab_simulink-2021.0.0.yml"
+        metadata:
+          supported_arch:
+            - x86_64
+          minimum_ram_gb: "4"
 
   grafana_0:
     name: "Grafana_0"
