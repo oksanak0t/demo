@@ -113,7 +113,7 @@ recipes:
         playbook: "playbooks/matlab_simulink-2021.0.0.yml"
         metadata:
           supported_arch:
-            - x86_64
+            - arm64
           minimum_ram_gb: "8"
       2021.0.1:
         playbook: "playbooks/matlab_simulink-2021.0.0.yml"
